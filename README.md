@@ -9,7 +9,7 @@ Favorite Projects from The Tech Academy program
   <li><a href="https://github.com/Kdooby/Favorite-Projects/tree/main/Academy%20Cinemas%20(Bootstrap-4)">Academy Cinemas</li>
   <li><a href="https://github.com/Kdooby/Basic-C-Sharp-Projects/tree/main/AnotherInsuranceCompany">Car Insurance</li>
   <li><a href="https://github.com/Kdooby/Favorite-Projects/tree/main/BlackJack(C%23)">Black Jack</li>
-  <li><a href="https://github.com/Kdooby/Favorite-Projects/tree/main/Movie%20Database%20(Python-Django)">Movie Database</li>
+  <li><a href="https://github.com/Kdooby/Favorite-Projects/tree/main/NoLag%20Games%20(HTML%20CSS%20JavaScript)">NoLag Games</li>
     
     
 </ul>
@@ -29,7 +29,11 @@ Favorite Projects from The Tech Academy program
   keep track of player information.  On top of that, there is custom dialog to make it feel like
   an old west text based card game!</p>
   
-<h3>Movie Database</h3>
+<h3>NoLag Games</h3>
+<p>NoLag Games is a mock gamer website.  It utilizes HTML, CSS and JavaScript for all the styles and 
+  functions.  The site includes a Modal for the gallery and has a pop down "newsletter" form.  Also integrated are videos
+  of popular games. 
+ 
   
 
 
