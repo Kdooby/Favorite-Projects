@@ -1,0 +1,30 @@
+{% extends 'movies/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div id="image">
+    <div class="movie_panel">
+        <h2>Need to Update or Delete a Movie?</h2>
+        <form name = "MovieList" method="POST">
+            <div class = "frmObject_container">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+                {{ form.as_p }}
+            </div>
+            <div class="frmBtn_container">
+                <button type="submit"  class="btn btn-outline-light btn-md" value="Update Movie">Update Movie</button>
+                <br>
+                <br>
+                <div class="frmBtn_container">
+                    <a href="{% url 'confirm-delete' movie.id %}" class="btn btn-outline-light btn-sm" role="button">Delete</a>
+                    <a href="{% url 'all-movies' %}" class="btn btn-outline-light btn-sm" role="button">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

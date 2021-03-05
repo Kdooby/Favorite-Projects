@@ -1,0 +1,337 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: black;
+    color: #E7DDDA;
+}
+
+
+strong {
+    color: red;
+}
+
+/*---------------------------------
+        HEADER
+----------------------------------*/
+header {
+    color: white ;
+    text-align: left;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    z-index: 1;
+}
+
+
+    header span {
+        color: rgb(37, 37, 36);
+        font-family: Courier New;
+        font-size: 7vmin;
+        letter-spacing: 3px;
+        padding-left: .1em;
+        animation: headerspan 5s infinite;
+        text-shadow: none;
+    }
+
+
+@keyframes headerspan {
+    0% {
+        top: 0px;
+        left: 40px;
+    }
+
+    50% {
+        top: 0px;
+        left: 40px;
+        color: transparent
+    }
+
+    100% {
+        top: 0px;
+        left: 40px;
+    }
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 15px;
+    text-shadow: 2px 3px 7px rgba(0, 0, 0, 0.5);
+    font-size: 4vmin;
+}
+
+#grad1 {
+    background-image: linear-gradient(to left, #830206, white);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 5px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/*--------------------------------------
+        NAV BAR
+---------------------------------------*/
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    top: 10%;
+    text-align: center;
+    z-index: 1;
+}
+
+.menu {
+    color: rgb(185, 230, 230);
+    list-style: none;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 3vmin;
+    letter-spacing: 1pt;
+    color: #000;
+    background-color: #E7DDDA;
+    margin: 2% auto;
+    position: relative;
+    padding: 13px 2%;
+    border: 2px solid #830206;
+    box-shadow: inset -2px -2px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .2s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+    z-index: 1;
+}
+
+.menu li:hover {
+    color: white;
+    background-color: #A89E9B;
+    box-shadow: inset 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+/*=====================================*/
+#image {
+    background: url(../images/movie_collage.png) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	display: inline-block;
+	height: auto;
+	padding-top: 300px;
+	/*This is the spacer before the Main Title Logo */
+	padding-bottom: 500px;
+	/*This is the spacer after the Main Title Logo */
+	color: #fff;
+}
+/*=====================================
+            HOME PAGE
+======================================*/
+.About_Container {
+    position: relative;
+    margin: 50px auto;
+    max-width:40%;
+    min-width: 25%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #830206;
+    border-radius: 12px;
+    background-color:  rgb(0, 0, 0, .8);
+    color: #E7DDDA;
+}
+
+.box_office {
+position: relative;
+    margin: 50px auto;
+    max-width:80%;
+    min-width: 30%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #830206;
+    border-radius: 12px;
+    background-color:  rgb(0, 0, 0, .8);
+    color: #E7DDDA;
+
+}
+
+/*======================================
+            SEARCH MOVIES / ALL MOVIES
+========================================*/
+.search_container, h2 {
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.search_container {
+    position: relative;
+    margin: -200px auto;
+    max-width: 20%;
+    padding: 10px;
+    border: 3px solid #830206;
+    border-radius: 12px;
+    background-color:  rgb(0, 0, 0, .8);
+    color: #E7DDDA;
+    overflow: hidden;
+
+}
+#headerRow {
+
+    text-align: center;
+    position: relative;
+    margin: 25px auto;
+    padding: 20px;
+    overflow: hidden;
+    background-color: rgb(131, 2, 6, .5)
+}
+
+th{
+	border: 2px solid #830206;
+	padding: 4px;
+	border-radius: 8px;
+	font-weight: 700;
+
+
+
+
+}
+.movie_display {
+    position: relative;
+    margin: 250px auto;
+    max-width:90%;
+    min-width: 40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: 4px solid #830206;
+    border-radius: 12px;
+    background-color:  rgb(0, 0, 0, .9);
+    color: #E7DDDA;
+}
+
+.movie_display h1 {
+    font-variant: small-caps;
+
+}
+.movie-display, table  {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 80%;
+    min-width: 20%;
+    border-spacing: 30px;
+    border-collapse: separate;
+
+}
+
+/*======================================
+            SUMMARY DISPLAY
+=======================================*/
+
+.summary_display {
+    position: relative;
+    margin: 100px auto;
+    max-width:60%;
+    min-width: 25%;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid #830206;
+    border-radius: 12px;
+    background-color:  rgb(0, 0, 0, .9);
+    color: #E7DDDA;
+}
+
+/*=====================================
+          ADD-MOVIE FORM
+======================================*/
+.movie-panel h2 {
+    text-align: center;
+    font-weight: 800;
+
+}
+
+.movie_panel {
+
+    position: relative;
+    margin: 0px auto;
+    max-width: 25%;
+    min-width: 25%;
+    padding: 10px;
+    border: 4px solid #830206;
+    border-radius: 12px;
+    background-color:  rgb(0, 0, 0, .8);
+    color: #E7DDDA;
+    overflow: hidden;
+
+
+}
+.movie_panel, p {
+    text-align: center;
+
+}
+
+
+.frmObject_container {
+    display: block;
+    max-width: 100%;
+    min-width: 40%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.frmBtn_container {
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/*=======================================
+                DELETE MOVIE
+ =======================================*/
+ .delete_movie {
+
+    position: relative;
+    margin: 0px auto;
+    max-width: 25%;
+    min-width: 25%;
+    color: #E7DDDA;
+    text-align: center;
+    overflow: hidden;
+
+
+}
+/*======================================
+        FOOTER
+======================================*/
+
+footer p {
+    position: fixed;
+    bottom: 0px;
+    color: white;
+    width: 100%;
+    margin: 0px auto;
+    padding: 3px;
+    background-color: black;
+    font-size: 14px;
+    text-align: center;
+}
+

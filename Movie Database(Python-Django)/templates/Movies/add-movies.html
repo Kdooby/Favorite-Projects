@@ -1,0 +1,26 @@
+{% extends 'movies/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div id="image">
+    <div class="movie_panel">
+        <h2>Add A Movie!</h2>
+        <p>*Your contribution can be seen <a href="{% url 'all-movies' %}"id="link">HERE!</a></p>
+        <form method="POST" action="{% url 'add-movies' %}">
+            <div class = "frmObject_container">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+                {{ form.as_p }}
+            </div>
+            <div class="frmBtn_container">
+                <input  type = "submit" class="btn btn-outline-light btn-md" value="Add New Movie" name="Save_Item" onclick="clear">
+                <a href="{% url 'all-movies' %}"><button type="button" class="btn btn-outline-light btn-md" value="Cancel">Cancel</button></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

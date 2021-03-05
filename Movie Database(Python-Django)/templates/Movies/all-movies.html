@@ -1,0 +1,63 @@
+{% extends 'movies/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div id="image">
+    <div class="search_container">
+        <form>
+            <br>
+            <!-- Use value to add the Django populated details-->
+            <label>Search Movies:</label>
+            <div class = "frmObject_container">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+                {{ form.as_p }}
+                <!-- User Input To Search Movies -->
+                <input  id="movieSearch" type="text" name="movie_search" value="{{ form.Movie_Title }}">
+                <br>
+                <br>
+                <a href = "#"><button type="button" class="btn btn-outline-light btn-sm">Search</button></a>
+            </div>
+        </form>
+    </div>
+        <br>
+        <br>
+
+
+    <div class="movie_display">
+        <h1>Movie Collection</h1>
+        <table class= "table table-responsive" id="listOfMovies">
+            <tr id="headerRow">
+                <th>Movie Title</th>
+                <th>Starring</th>
+                <th>Directed By</th>
+                <th>Year Released</th>
+                <th>Genre</th>
+                <th>Summary</th>
+                <th>Edit Submission</th>
+            </tr>
+
+            {% for movie in movies %}
+                <tr>
+                    <td>{{movie.Movie_Title}}</td>
+                    <td>{{movie.Starring}}</td>
+                    <td>{{movie.Directed_By}}</td>
+                    <td>{{movie.Year_Released}}</td>
+                    <td>{{movie.Genre}}</td>
+                    <!--Redirects to Summary page on click-->
+                    <td><a href="{% url 'summary' movie.id %}" class="btn btn-outline-light btn-md">Click for Summary</a></td>
+                    <!--Redirects to Update/Edit/Delete page on click-->
+                    <td><a href="{% url 'update-movie' movie.id %}" class="btn btn-outline-light btn-md">edit</a></td>
+                </tr>
+            {% endfor %}
+
+
+
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}
+

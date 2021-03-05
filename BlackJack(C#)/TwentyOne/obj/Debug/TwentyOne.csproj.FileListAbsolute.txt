@@ -1,0 +1,17 @@
+C:\Users\kevin\Desktop\Basic_C#_Programs\TwentyOne\TwentyOne\bin\Debug\TwentyOne.exe.config
+C:\Users\kevin\Desktop\Basic_C#_Programs\TwentyOne\TwentyOne\bin\Debug\TwentyOne.exe
+C:\Users\kevin\Desktop\Basic_C#_Programs\TwentyOne\TwentyOne\bin\Debug\TwentyOne.pdb
+C:\Users\kevin\Desktop\Basic_C#_Programs\TwentyOne\TwentyOne\obj\Debug\TwentyOne.csprojAssemblyReference.cache
+C:\Users\kevin\Desktop\Basic_C#_Programs\TwentyOne\TwentyOne\obj\Debug\TwentyOne.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Desktop\Basic_C#_Programs\TwentyOne\TwentyOne\obj\Debug\TwentyOne.exe
+C:\Users\kevin\Desktop\Basic_C#_Programs\TwentyOne\TwentyOne\obj\Debug\TwentyOne.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\TwentyOne\TwentyOne\bin\Debug\TwentyOne.exe.config
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\TwentyOne\TwentyOne\bin\Debug\TwentyOne.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\TwentyOne\TwentyOne\bin\Debug\TwentyOne.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\TwentyOne\TwentyOne\obj\Debug\TwentyOne.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\TwentyOne\TwentyOne\obj\Debug\TwentyOne.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\TwentyOne\TwentyOne\obj\Debug\TwentyOne.exe
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\TwentyOne\TwentyOne\obj\Debug\TwentyOne.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\TwentyOne\TwentyOne\bin\Debug\Casino.dll
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\TwentyOne\TwentyOne\bin\Debug\Casino.pdb
+C:\Users\kevin\Documents\The Tech Academy\Basic-C-Sharp-Projects\TwentyOne\TwentyOne\obj\Debug\TwentyOne.csproj.CopyComplete

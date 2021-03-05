@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+        {% block title %}The Movie Encyclopedia{% endblock %}
+    </title>
+
+    {% block stylesheets %}
+
+        <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}">
+    {% endblock %}
+
+</head>
+<body>
+
+{% include 'Movies/header.html' %}
+
+{% block navbar %}
+    <div class="wrap">
+        <ul class="menu">
+            <a href="{% url 'home' %}"><li>Home</li></a>
+            <a href="{% url 'all-movies' %}"><li>All Movies</li></a>
+            <a href="{% url 'add-movies' %}"><li>Add Movie</li></a>
+        </ul>
+    </div>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+{% endblock %}
+
+
+{% include 'Movies/footer.html' %}
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+
+</body>
+</html>
