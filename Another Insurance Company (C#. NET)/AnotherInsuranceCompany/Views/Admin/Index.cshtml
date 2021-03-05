@@ -1,0 +1,43 @@
+﻿@using AnotherInsuranceCompany.Models
+@model List<Applicant>
+
+<div class="card-header text-center">
+  <h3 class="mx-auto">Auto Quotes</h3>
+</div>
+<br />
+<br />
+<div class="card-body">
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>First Name:</th>
+        <th>Last Name:</th>
+        <th>Email Address:</th>
+        <th>Quote:</th>
+      </tr>
+    </thead>
+
+    @foreach (var user in Model)
+    {
+      <tbody>
+
+        <tr>
+          <td>
+            @user.FirstName
+          </td>
+          <td>
+            @user.LastName
+          </td>
+          <td>
+            @user.EmailAddress
+          </td>
+          <td>
+            @user.Total
+          </td>
+        </tr>
+      </tbody>
+    }
+  </table>
+</div>
+

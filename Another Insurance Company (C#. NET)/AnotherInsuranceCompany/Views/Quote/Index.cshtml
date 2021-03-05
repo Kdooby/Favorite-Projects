@@ -1,0 +1,80 @@
+﻿
+
+<h2 class="card-header text-center">
+  Start Quote!
+</h2>
+<h3 class="card-header text-center">Please tell us a little about yourself:</h3>
+<br />
+
+
+@using (Html.BeginForm("Apply", "Quote", FormMethod.Post))
+{
+
+    <table class="table">
+
+      <tr>
+        <th>First Name:</th>
+        <td align="center"><input name="FirstName" type="text" class="form-control" placeholder="First Name" /></td>
+      </tr>
+      <tr>
+        <th>Last Name:</th>
+        <td align="center"><input name="LastName" type="text" class="form-control" placeholder="Last Name" /></td>
+      </tr>
+      <tr>
+        <th>Email Address:</th>
+        <td align="center"><input name="EmailAddress" type="email" class="form-control" placeholder="Email Address" /></td>
+      </tr>
+      <tr>
+        <th>Date of Birth:</th>
+        <td align="center"><input name="DateOfBirth" type="text" class="form-control" placeholder="MM/DD/YYYY" /></td>
+      </tr>
+      <tr>
+        <th>Car Year:</th>
+        <td align="center"><input name="CarYear" type="text" class="form-control" placeholder="YYYY" /></td>
+      </tr>
+      <tr>
+        <th>Car Make:</th>
+        <td align="center"><input name="CarMake" type="text" class="form-control" placeholder="ex. Subaru" /></td>
+      </tr>
+      <tr>
+        <th>Car Model:</th>
+        <td align="center"><input name="CarModel" type="text" class="form-control" placeholder="ex. BRZ" /></td>
+      </tr>
+      <tr>
+        <th>Have you had a DUI?:</th>
+        <td align="center"><input name="Dui" type="text" class="form-control" placeholder="Yes or No" /></td>
+      </tr>
+      <tr>
+        <th>Speeding Tickets?:</th>
+        <td align="center"><input name="Tickets" type="text" class="form-control" placeholder="No. of Tickets" /></td>
+      </tr>
+      <tr>
+        <th>Full or Liability Coverage</th>
+      <tr>
+        <th>Choose One:</th>
+        <td align="center"><input name="Coverage" type="text" class="form-control" placeholder="Full or Liability" /></td>
+      </tr>
+      <tr>
+    </table>
+
+
+  <div class="col-2" align="center">
+    <button type="submit" class="btn btn-success col-md-3">Submit</button>
+  </div>
+  <br />
+  <br />
+  <div class="card bg-success img-rounded" align="center" style=" padding: 2px 2px;">
+    <div class="mx-auto">
+      <h3 class="text-center">
+        Congratulations!  Your quote is:
+        @ViewData["user.Total"]
+      </h3>
+    </div>
+  </div>
+}
+<br />
+<br />
+
+
+
+
