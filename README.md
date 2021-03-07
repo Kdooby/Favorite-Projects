@@ -8,7 +8,7 @@ Favorite Projects from The Tech Academy program
 <ul>
   <li><a href="https://github.com/Kdooby/Favorite-Projects/tree/main/Academy%20Cinemas%20(Bootstrap-4)">Academy Cinemas</li>
   <li><a href="https://github.com/Kdooby/Basic-C-Sharp-Projects/tree/main/AnotherInsuranceCompany">Car Insurance</li>
-  <li><a href="https://github.com/Kdooby/Favorite-Projects/tree/main/BlackJack(C%23)">Black Jack</li>
+  <li><a href="https://github.com/Kdooby/Favorite-Projects/tree/main/BlackJack%20(C%23)">Black Jack</li>
   <li><a href="https://github.com/Kdooby/Favorite-Projects/tree/main/NoLag%20Games%20(HTML%20CSS%20JavaScript)">NoLag Games</li>
     
     
